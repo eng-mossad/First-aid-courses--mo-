@@ -300,14 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(loader);
 
     // Hide loader when page is loaded
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.remove();
-            }, 50);
-        }, 10);
-    });
+    
 
     // Add CSS for new elements
     const additionalStyles = document.createElement('style');
