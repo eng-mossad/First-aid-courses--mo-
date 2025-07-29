@@ -295,7 +295,8 @@ document.addEventListener('DOMContentLoaded', function() {
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 10000;
+        z-index: 1
+;
         transition: opacity 0.5s ease;
     `;
 
