@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
         justify-content: center;
         z-index: 1
 ;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.1s ease;
     `;
 
     document.body.appendChild(loader);
@@ -308,8 +308,8 @@ document.addEventListener('DOMContentLoaded', function() {
             loader.style.opacity = '0';
             setTimeout(() => {
                 loader.remove();
-            }, 500);
-        }, 1000);
+            }, 50);
+        }, 10);
     });
 
     // Add CSS for new elements
