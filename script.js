@@ -68,13 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Parallax effect for header
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const header = document.querySelector('header');
-        if (header) {
-            header.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+  loader.style.opacity = '0';
+  setTimeout(() => loader.remove(), 200);
+});
 
     // Floating buttons animation
     const floatingButtons = document.querySelectorAll('.floating-btn');
