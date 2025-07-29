@@ -271,33 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add loading animation
-    const loader = document.createElement('div');
-    loader.id = 'loader';
-    loader.innerHTML = `
-        <div class="loader-content">
-            <div class="medical-cross">
-                <div class="cross-horizontal"></div>
-                <div class="cross-vertical"></div>
-            </div>
-            <h3>جاري التحميل...</h3>
-        </div>
-    `;
-    loader.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #12ac8e, #0d846c);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1
-;
-        transition: opacity 0.1s ease;
-    `;
-
-    document.body.appendChild(loader);
+    
 
     // Hide loader when page is loaded
     
